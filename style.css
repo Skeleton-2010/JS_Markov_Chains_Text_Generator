@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #ff0;
+    background-color: #000;
+    font-family: Digiline;
+    font-size: 10px;
+    cursor: crosshair;
+}
+
+@font-face {
+    font-family: Digiline;
+    src: url(./Fon/digiline.ttf);
+}
+
+.Main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.counter{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.inpTextBase,
+.outTextGen{
+    background-color: #000;
+    border: 1px solid #ff0;
+    resize: none;
+    padding: 4px;
+    
+}
+
+.outTextGen{
+    pointer-events: none;
+}
+
+button{
+    padding: 4px;
+    background-color: #000;
+    border: 1px solid #ff0;
+}
+
+
+.inpWordRange {
+  margin: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 1px;
+  background: #ff0;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.inpWordRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #ff0;
+}

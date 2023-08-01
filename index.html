@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Img/markovIcon.ico" type="image/x-icon" />
+    <title>Markov Text Generator</title>
+  </head>
+  <body>
+    <div class="Main">
+      <div class="TextBase">
+        <textarea
+          name=""
+          class="inpTextBase"
+          cols="80"
+          rows="20"
+          placeholder="Write text that will be used for generating..."
+        >
+to be, or not to be, that is the question:
+whether 'tis nobler in the mind to suffer
+the slings and arrows of outrageous fortune,
+or to take arms against a sea of troubles
+and by opposing end them. To die - to sleep,
+
+no more; and by a sleep to say we end
+the heart-ache and the thousand natural shocks
+that flesh is heir to: 'tis a consummation
+devoutly to be wish'd. To die, to sleep;
+to sleep, perchance to dream - ay, there's the rub:
+
+for in that sleep of death what dreams may come,
+when we have shuffled off this mortal coil,
+must give us pause - there's the respect
+that makes calamity of so long life.</textarea
+        >
+      </div>
+
+      <div class="counter">
+        <h5>Length of generated text:</h5>
+        <input
+          type="range"
+          min="10"
+          max="500"
+          value="100"
+          class="inpWordRange"
+          placeholder="_"
+        />
+        <h3 class="txtCounter">100</h3>
+      </div>
+
+      <button class="btnStartGen">Generate!</button>
+
+      <div class="TextGenerated">
+        <textarea
+          name=""
+          class="outTextGen"
+          cols="80"
+          rows="20"
+          placeholder="Text that will be generated..."
+        ></textarea>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
